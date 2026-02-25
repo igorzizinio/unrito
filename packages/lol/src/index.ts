@@ -1,5 +1,7 @@
-import { RiotCore } from "@unrito/core";
+import type { RiotClient } from "@unrito/core";
 
 export class LolClient {
-  constructor(private core: RiotCore) {}
+  constructor(private core: RiotClient) {
+    console.log("not implemented yet!");
+  }
 }
