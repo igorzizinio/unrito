@@ -1,5 +1,1 @@
-export class RiotCore {
-  constructor() {
-    console.log("Core initialized");
-  }
-}
+export * from "./RiotClient";
