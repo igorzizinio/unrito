@@ -1,6 +1,6 @@
-import { RiotClient } from "../RiotClient";
-import { RegionalRegion } from "../routing/regions";
-import { RiotAccount } from "../types";
+import type { RiotClient } from "../RiotClient";
+import type { RegionalRegion } from "../routing/regions";
+import type { RiotAccount } from "../types";
 
 export class AccountModule {
   constructor(private readonly client: RiotClient) {}

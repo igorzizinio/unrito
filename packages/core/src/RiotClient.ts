@@ -1,6 +1,6 @@
+import { AccountModule } from "./modules/AccountModule";
 import { HttpClient } from "./http/HttpClient";
 import type { PlatformRegion, RegionalRegion } from "./routing/regions";
-import { AccountModule } from "./modules/AccountModule";
 
 export interface RiotClientOptions {
   apiKey: string;
