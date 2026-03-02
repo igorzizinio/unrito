@@ -1,5 +1,6 @@
 import type { RiotClient } from "@unrito/core";
 import { RegionalRegion } from "@unrito/core/dist/routing/regions";
+import { Summoner } from "../types";
 
 export class SummonerModule {
   constructor(private readonly core: RiotClient) {}
@@ -9,7 +10,7 @@ export class SummonerModule {
 
     return this.core
       .getHttpClient()
-      .getRegional(
+      .getRegional<Summoner>(
         resolvedRegion,
         `/lol/summoner/v4/summoners/by-puuid/${encodeURIComponent(puuid)}`,
       );
